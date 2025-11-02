@@ -161,8 +161,20 @@
         </div>
         
         <div class="contact">
-            <a href="mailto:talk@showbuddha.com">talk@showbuddha.com</a>
+            <a href="#" id="email-link">Contact Us</a>
         </div>
+
+        <script>
+            // Email obfuscation
+            (function() {
+                var user = 'talk';
+                var domain = 'showbuddha.com';
+                var email = user + '@' + domain;
+                var link = document.getElementById('email-link');
+                link.href = 'mailto:' + email;
+                link.textContent = email;
+            })();
+        </script>
     </div>
 
     <footer>
