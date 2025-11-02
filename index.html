@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWBUDDHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #FAFAFA;
+            color: #1A1A1A;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main content container */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Logo/Brand name */
+        .brand {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            color: #1A1A1A;
+        }
+
+        .show {
+            color: #666;
+        }
+
+        .buddha {
+            color: #1A1A1A;
+        }
+
+        /* Tagline */
+        .tagline {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        /* About section */
+        .about {
+            max-width: 600px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        /* Contact link */
+        .contact {
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .contact a {
+            color: #1A1A1A;
+            text-decoration: none;
+            border-bottom: 1px solid #1A1A1A;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact a:hover {
+            opacity: 0.6;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #999;
+            letter-spacing: 0.1em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .brand {
+                margin-bottom: 0.5rem;
+            }
+
+            .tagline {
+                margin-bottom: 2rem;
+            }
+
+            .about {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* Optional: Add subtle animation on load */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container > * {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .brand {
+            animation-delay: 0.1s;
+        }
+
+        .tagline {
+            animation-delay: 0.3s;
+        }
+
+        .about {
+            animation-delay: 0.5s;
+        }
+
+        .contact {
+            animation-delay: 0.7s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="brand"><span class="show">SHOW</span><span class="buddha">BUDDHA</span></h1>
+        
+        <div class="about">
+            For artists who refuse to fit in one box.
+        </div>
+        
+        <div class="contact">
+            <a href="mailto:now@showbuddha.com">now@showbuddha.com</a>
+        </div>
+    </div>
+
+    <footer>
+        LONDON
+    </footer>
+</body>
+</html>
