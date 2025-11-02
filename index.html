@@ -82,7 +82,6 @@
         .contact a {
             color: #1A1A1A;
             text-decoration: none;
-            border-bottom: 1px solid #1A1A1A;
             transition: opacity 0.3s ease;
         }
 
@@ -170,9 +169,10 @@
                 var user = 'wave';
                 var domain = 'showbuddha.com';
                 var email = user + '@' + domain;
+                var displayEmail = user + '[at]' + domain;
                 var link = document.getElementById('email-link');
                 link.href = 'mailto:' + email;
-                link.textContent = email;
+                link.textContent = displayEmail;
             })();
         </script>
     </div>
